@@ -4,7 +4,7 @@
 #include <numeric>
 #include <vector>
 #include <list>
-
+#include <string>
 using namespace std;
 
 using Hash = unsigned long long;
