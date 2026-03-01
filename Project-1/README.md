@@ -1,3 +1,12 @@
+| Program    | Real Time (seconds) | Memory (KB) |
+| ---------- | ------------------- | ----------- |
+| alloca.out | 1.37                | 903,168     |
+| malloc.out | 1.52                | 903,224     |
+| new.out    | 1.98                | 1,143,944   |
+| list.out   | 2.03                | 1,143,936   |
+
+^^^ Final timing results (using the small payload configuration) ^^^
+
 1. Which Program is fastest and is it always fastest?
 
    in small payloads (3-100 bytes per node) alloc was fastest at 1.37s using 903,168 kb of memory -------------- NUM_BLOCKS = 10,000,000
@@ -95,10 +104,14 @@ and the Head and tail relationship would just be like this:
     As the date grows, hashing dominates total runtime, the allocation method becomes way less importatnt
 
 
+COMPILER OPTION USED:
 
+   OPT="-O2 -g2"
+   MIN_BYTES = 3
+   MAX_BYTES = 100
+   NUM_BLOCKS= 10,000,000
 
-
-
+   g++ -O2 -g2 -DMIN_BYUTES=3 -DMAX_BYTES=100
 
 
 
