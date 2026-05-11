@@ -5,6 +5,10 @@
 #include <vector>
 #include <list>
 #include <string>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d09702 (test)
 using namespace std;
 
 using Hash = unsigned long long;
